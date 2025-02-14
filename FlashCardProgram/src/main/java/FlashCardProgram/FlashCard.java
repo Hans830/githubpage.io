@@ -24,5 +24,4 @@ public class FlashCard implements FlashCardInterface {
         return Word.getRechtschreibung();
     }
 
-    public String
 }

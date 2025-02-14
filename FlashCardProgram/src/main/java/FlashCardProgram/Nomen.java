@@ -17,6 +17,7 @@ public class Nomen extends Word{
 
     public Nomen(String rechtschreibung, ArrayList<String> Beispiele, ArrayList<String> ueblicheAnwendungen, ArrayList<String> translations, ArrayList<String> bedeutungen, Genus genus, String pluralForm, boolean isSchwach) {
         super(rechtschreibung, Beispiele, ueblicheAnwendungen, translations, bedeutungen);
+
         this.genus = genus;
         this.pluralForm = pluralForm;
         this.isSchwach = isSchwach;
