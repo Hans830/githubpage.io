@@ -2,7 +2,7 @@ package FlashCardProgram;
 
 import java.util.ArrayList;
 
-public class Word implements Word_Interface{
+public class Word implements FlashCardProgram.Interfaces.Word {
 
     private ArrayList<String> translations;
     private String rechtschreibung;

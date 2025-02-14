@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class Nomen extends Word{
 
+
     private Genus genus;
     private String pluralForm;
     private boolean isSchwach;
+
+
 
     public Nomen(String rechtschreibung, ArrayList<String> Beispiele, ArrayList<String> ueblicheAnwendungen, ArrayList<String> translations, ArrayList<String> bedeutungen) {
         super(rechtschreibung, Beispiele, ueblicheAnwendungen, translations, bedeutungen);
@@ -19,8 +22,11 @@ public class Nomen extends Word{
         this.isSchwach = isSchwach;
     }
 
-    public enum Genus{
 
+    /**
+     * Enum mit den drei Genera und dessen Artikel
+     */
+    public enum Genus{
 
         MASKULINUM("Der"),
         FEMININUM("Die"),

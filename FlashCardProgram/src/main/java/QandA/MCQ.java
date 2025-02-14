@@ -2,7 +2,11 @@ package QandA;
 
 public class MCQ extends Frage{
 
+
+
     public String[] optionen=new String[4];
+
+
 
     /**
      * Erstellung der Frage
@@ -31,6 +35,8 @@ public class MCQ extends Frage{
 
     }
 
+
+
     /**
      * Vermischt die Antworten in dem Array optionen
      */
@@ -40,18 +46,22 @@ public class MCQ extends Frage{
         }
     }
 
+
+
     private void swap(String[] array,int i,int j){
         String temp=array[i];
         array[i]=array[j];
         array[j]=temp;
     }
 
+
+
     /**
      * Erstellt eine textuelle Formulierung der Frage
      * @return die Formulierung der Frage
      */
     @Override
-    public String askQuestion(){
+    public String frageFormulieren(){
 
         StringBuilder output=new StringBuilder(frage);
         mixAnswers();
@@ -64,6 +74,7 @@ public class MCQ extends Frage{
 
         return output.toString();
     }
+
 
 
     /**

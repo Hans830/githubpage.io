@@ -2,17 +2,20 @@ package FlashCardProgram;
 
 import java.util.ArrayList;
 
-public class Verb extends Word {
+public class Verb extends Word{
 
     boolean isStark;
+    /**
+     * Der übliche Kasus des Objektes dieses Verbes
+     */
     String kasus;
-
 
     public Verb(String rechtschreibung, ArrayList<String> Beispiele, ArrayList<String> ueblicheAnwendungen, ArrayList<String> translations, ArrayList<String> bedeutungen) {
         super(rechtschreibung, Beispiele, ueblicheAnwendungen, translations, bedeutungen);
     }
 
-    private class conjugation{
+    private static class conjugation{
+
         String ich;
         String du;
         String er_sie_es;
@@ -28,6 +31,7 @@ public class Verb extends Word {
             this.ihr = ihr;
             this.sie_Sie = sie_Sie;
         }
+
     }
 
 
